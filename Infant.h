@@ -10,9 +10,9 @@ private:
     int bottles;
 public:
     Infant(string name, int age, int bottles);
-    string showneeds();
-    int getbottles();
-    void setbottles(int amount);
+    string showNeeds();
+    int getBottles();
+    void setBottles(int amount);
 
 };
 #endif

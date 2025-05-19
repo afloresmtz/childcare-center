@@ -21,6 +21,9 @@ public:
     //Setters
     void setName(const std::string& name);
     void setAge(int age);
+
+    // Method to display child information
+    virtual std::string showNeeds();
     
 };
 

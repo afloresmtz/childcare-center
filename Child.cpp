@@ -13,3 +13,6 @@ int Child::getAge() const {return age;}
 // Setters
 void Child::setName(const std::string& newName) {name = newName;}
 void Child::setAge(int newAge) {age = newAge;}
+
+// Method to display child information
+std::string Child::showNeeds() {return "Child needs love and care.";}

@@ -5,8 +5,6 @@
 
 class Child
 {
-private:
-    /* data */
 protected:
     std::string name;
     int age;

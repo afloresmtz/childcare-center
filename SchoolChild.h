@@ -1,4 +1,4 @@
-#indef SCHOOLCHILD_H
+#ifndef SCHOOLCHILD_H
 #define SCHOOLCHILD_H
 
 #include <string>

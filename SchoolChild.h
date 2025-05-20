@@ -1,6 +1,8 @@
 #indef SCHOOLCHILD_H
 #define SCHOOLCHILD_H
 
+#include <string>
+
 // Incluye el header "Child"
 #include "Child.h"
 

@@ -1,18 +1,18 @@
 #include "Infant.h"
 
-Infant::Infant(string name, int age, int bottles)
-    : Child(name, age), bottles(bottles) { }
+Infant::Infant(const std::string& name, int age, int bottles)
+  : Child(name, age), bottles(bottles) { }
 
-string Infant::showNeeds() {
-   
-    return getName() + " needs " + to_string(bottles) + " bottles.";
+std::string Infant::showNeeds() {
+    return getName() + " needs " + std::to_string(bottles) + " bottles";
 }
 
-int Infant::getBottles() {
+int Infant::getBottles() const {
     return bottles;
 }
 
 void Infant::setBottles(int amount) {
     bottles = amount;
 }
+
 

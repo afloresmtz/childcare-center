@@ -10,7 +10,7 @@
 Caregiver::Caregiver(string name, int years, list<Infant> infantList, list<Preschooler> preSchoolerList, list<SchoolChild> schoolChildList) :
     name(name), yearsOfExp(years), infantList(infantList), preSchoolerList(preSchoolerList), schoolChildList(schoolChildList) {}
 
-string Caregiver::displayReport() {
+std::string Caregiver::displayReport() {
     string mainString;
     mainString.append("Caregiver: " + name + "\n");
     mainString.append("Years of experience: " + std::to_string(yearsOfExp) + "\n------------------\n");
@@ -42,21 +42,22 @@ string Caregiver::displayReport() {
     return mainString;
 }
 
-string Caregiver::displayReport(string name) {
+std::string Caregiver::displayReport(std::string name) {
     for (Infant currentInfant: infantList) {
         if(currentInfant.getName() == name) {
-            return currentInfant.getName();
+            return currentInfant.showNeeds();
         }
     }
     for (Preschooler currentPreschooler: preSchoolerList) {
         if(currentPreschooler.getName() == name) {
-            return currentPreschooler.getName();
+            return currentPreschooler.showNeeds();
         }
     }
     for (SchoolChild currentSchoolChild: schoolChildList) {
         if(currentSchoolChild.getName() == name) {
-            return currentSchoolChild.getName();
+            return currentSchoolChild.showNeeds();
         }
     }
+    return "Child not found";
 }
 

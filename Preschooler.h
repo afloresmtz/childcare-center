@@ -3,17 +3,17 @@
 
 #include <iostream>
 #include <string>
+#include "Child.h"
 
 using namespace std;
 
 class Preschooler : public Child {
-private: 
+private:
     int autonomyLevel;
 public:
-    Preschooler(string name, int age, int autonomyLevel);
-    string showneeds();
-    int getAge();
-    int getAutonomyLevel(); 
-
-    };
-    #endif
+    Preschooler(string name, int age, int autonomy);
+    string showNeeds() override; 
+    int getAuto();
+    void setAuto(int level);
+};
+#endif

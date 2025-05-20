@@ -18,6 +18,7 @@ public:
     Caregiver(string name, int years, list<Infant> infantList, list<Preschooler> preSchoolerList, list<SchoolChild> schoolChildList);
 
     string displayReport();
+    string displayReport(string name);
 };
 
 #endif

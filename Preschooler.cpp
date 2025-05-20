@@ -5,7 +5,7 @@ Preschooler::Preschooler(string name, int age, int autonomy) : Child(name, age) 
     autonomyLevel = autonomy;
 }
 
-// Override the showNeeds method from Child class
+// Override the showNeeds 
 string Preschooler::showNeeds() {
     return getName() + " is a preschooler with autonomy level " + to_string(autonomyLevel) + 
            " and needs guidance with complex tasks.";

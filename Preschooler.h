@@ -12,7 +12,7 @@ private:
     int autonomyLevel;
 public:
     Preschooler(string name, int age, int autonomy);
-    string showNeeds() override; 
+    std::string showNeeds() override; 
     int getAuto();
     void setAuto(int level);
 };

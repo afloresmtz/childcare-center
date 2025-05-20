@@ -8,14 +8,14 @@
 #include "SchoolChild.h"
 
 Caregiver::Caregiver(string name, int years, list<Infant> infantList, list<Preschooler> preSchoolerList, list<SchoolChild> schoolChildList) :
-    name(name), years(years), infantList(infantList), preSchoolerList(preSchoolerList), schoolChildList(schoolChildList) {}
+    name(name), yearsOfExp(years), infantList(infantList), preSchoolerList(preSchoolerList), schoolChildList(schoolChildList) {}
 
 string Caregiver::displayReport() {
     string mainString;
     mainString.append("Caregiver: " + name + "\n");
-    mainString.append("Years of experience" + yearsOfExp + "\n" + "------------------\n");
+    mainString.append("Years of experience" + yearsOfExp + "\n------------------\n");
 
-    mainString.append("- Infants: \n\n")
+    mainString.append("- Infants: \n\n");
     for (Infant currentInfant: infantList) {
         mainString.append("Name: " + currentInfant.getName() + "\n");
         mainString.append("Age:" + to_string(currentInfant.getAge() + "\n");

@@ -1,2 +1,1 @@
-
-![Childcare Center Simulation (1)](https://github.com/user-attachments/assets/4a87e626-2a95-4677-b4e7-f5804464aea1)
+![Childcare Center Simulation class2](https://github.com/user-attachments/assets/762327fe-2050-4535-a561-d6cb353e47c6)
